@@ -1,0 +1,20 @@
+    STEPS TO RUN DJANGO PROJECTS
+
+    * To create requirement file
+    -pip3 install pipreqs
+    -pip3 freeze > requirements.txt
+
+
+    STEP 1:
+    * pip install virtualenv
+    * python -m venv venv  --> Creates Virtual Environment
+    * Go to venv folder i.e cd venv, then fire 'Scripts/activate' --> Activates Virtual env
+    * Make sure you always working on virtual environment
+
+    STEP 2:
+    * pip install -r requirements.txt --> Installs all the required packages to run the project
+
+    STEP 3:
+    * python manage.py makemigrations
+    * python manage.py migrate --> Creates table
+    * python manage.py runserver --> To run the project
