@@ -4,17 +4,30 @@ from App1.models.address import Country
 from App1.models.address import State
 from App1.models.address import City
 from App1.models.user import User
+from App1.models.black_listed_token import BlackListedToken
+
 
 
 class StudentUser(admin.ModelAdmin):
-    list_display = ('name', 'subject', 'address', 'number')
+    list_display = ('id', 'name', 'subject', 'address', 'number')
 
 
-# Register your models here.
+class CountryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'country')
+
+
+class StateAdmin(admin.ModelAdmin):
+    list_display = ('id', 'state')
+
+
+class CityAdmin(admin.ModelAdmin):
+    list_display = ('id', 'city')
+
+
 admin.site.register(Student, StudentUser)
-admin.site.register(Country)
-admin.site.register(State)
-admin.site.register(City)
-
+admin.site.register(Country, CountryAdmin)
+admin.site.register(State, StateAdmin)
+admin.site.register(City, CityAdmin)
 admin.site.register(User)
+admin.site.register(BlackListedToken)
 
