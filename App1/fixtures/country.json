@@ -1,0 +1,59 @@
+[
+  {
+    "model": "App1.Country",
+    "pk": 1,
+    "fields": {
+      "country": "India"
+    }
+  },
+  {
+    "model": "App1.Country",
+    "pk": 2,
+    "fields": {
+      "country": "USA"
+    }
+  },
+  {
+    "model": "App1.State",
+    "pk": 1,
+    "fields": {
+      "country": "1",
+      "state": "Maharashtra"
+    }
+  },
+  {
+    "model": "App1.State",
+    "pk": 2,
+    "fields": {
+      "country": "1",
+      "state": "Goa"
+    }
+  },
+  {
+    "model": "App1.City",
+    "pk": 1,
+    "fields": {
+      "country": "1",
+      "state": "1",
+      "city": "Yavatmal"
+    }
+  },
+  {
+    "model": "App1.City",
+    "pk": 2,
+    "fields": {
+      "country": "1",
+      "state": "1",
+      "city": "Nagpur"
+    }
+  },
+  {
+    "model": "App1.City",
+    "pk": 1,
+    "fields": {
+      "country": "1",
+      "state": "2",
+      "city": "Panaji"
+    }
+  }
+]
